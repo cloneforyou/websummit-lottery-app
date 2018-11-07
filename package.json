@@ -1,0 +1,29 @@
+{
+  "name": "reactjs-academy-lottery",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "react": "16.7.0-alpha.0 - next",
+    "react-confetti": "2.3.0",
+    "react-dom": "16.7.0-alpha.0 - next",
+    "react-router-dom": "4.3.1",
+    "react-scripts": "2.0.3",
+    "react-sizeme": "2.5.2",
+    "styled-components": "4.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
