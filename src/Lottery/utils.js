@@ -1,4 +1,4 @@
-export function postEmail(email) {
+export function postEmail(email, discount) {
   let body = {
     contact: {
       Email: email,
@@ -6,6 +6,7 @@ export function postEmail(email) {
       custom: {
         "boolean--websummit--lottery": true,
         'string--From--Path': "websummit Lottery app",
+        'string--Discount': discount
       }
     }
   };
