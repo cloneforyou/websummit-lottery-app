@@ -2,11 +2,11 @@ export function postEmail(email, discount) {
   let body = {
     contact: {
       Email: email,
-      LeadSource: "Web Summit 2018",
+      LeadSource: "ReactLive 2019",
       custom: {
-        "boolean--websummit--lottery": true,
-        'string--From--Path': "websummit Lottery app",
-        'string--Discount': discount
+        "boolean--rectlive2019--lottery": true,
+        "string--From--Path": "ReactLive Lottery app",
+        "string--Discount": discount
       }
     }
   };
@@ -46,8 +46,8 @@ export function getDiscount() {
     // end of function
   };
 
-  var lang = ["5", "10", "15"];
-  var weight = [0.7, 0.25, 0.05];
+  var lang = ["5% discount", "t-shirt", "t-shirt and 5% discount!"];
+  var weight = [0.75, 0.5, 0.25];
 
   var random_item = getRandomItem(lang, weight);
 

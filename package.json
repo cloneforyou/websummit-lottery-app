@@ -5,6 +5,7 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "firebase": "^6.6.1",
     "react": "16.7.0-alpha.0 - next",
     "react-confetti": "2.3.0",
     "react-dom": "16.7.0-alpha.0 - next",

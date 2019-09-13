@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { postEmail, getDiscount } from "../utils";
-import styled from 'styled-components';
+import styled from "styled-components";
 import { Wrapper, Title, Input, SubmitButton } from "./ui";
-import Logo from './Logo'
+import Logo from "./Logo";
 
 const Form = styled.form`
-  background-color: rgba(0, 41, 56, 0.75);
   width: 90%;
   max-width: 800px;
   margin: 24px auto;
@@ -15,22 +14,22 @@ const Form = styled.form`
   flex-direction: column;
   padding: 24px;
   box-sizing: border-box;
-`
+`;
 function Email({ history }) {
   const [email, setEmail] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
-    const discount = getDiscount()
+    const discount = getDiscount();
     postEmail(email, discount).then(user => {
-      history.push("/result", {discount});
+      history.push("/result", { discount });
     });
   }
 
   return (
     <Wrapper>
       <Logo />
-      <Title fixed>ReactJS Academy Lottery</Title>
+      <Title fixed>Lottery</Title>
       <Form onSubmit={handleSubmit}>
         <Input
           type="email"

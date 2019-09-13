@@ -21,37 +21,39 @@ export const Wrapper = styled.div`
     width: 100%;
     height: 100%;
     z-index: -2;
-    background: center url("https://firebasestorage.googleapis.com/v0/b/reactjsacademy-react.appspot.com/o/homepage_topPage.jpg?alt=media");
+    background: center
+      url("https://firebasestorage.googleapis.com/v0/b/reactjsacademy-react.appspot.com/o/homepage_topPage.jpg?alt=media");
   }
 `;
 
 export const Title = styled.h1`
-    font-family: Barlow, sans-serif;
-    margin: 0px;
-    font-size: 64px;
-    font-weight: 900;
-    font-style: normal;
-    font-stretch: normal;
-    width: ${props => props.fixed ? "800px" : "auto"};
-    box-sizing: border-box;
-    line-height: 1.5;
-    letter-spacing: normal;
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 41, 56, 0.75);
-    padding: 16px;
-    text-shadow: rgba(111, 207, 240, 0.4) 1px -1px 17px;
+  font-family: Barlow, sans-serif;
+  margin: 0px;
+  text-align: center;
+  font-size: 52px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  max-width: 800px;
+  box-sizing: border-box;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 41, 56, 0.75);
+  padding: 16px;
+  text-shadow: rgba(111, 207, 240, 0.4) 1px -1px 17px;
 `;
 
 export const Input = styled.input`
-    font-size: 24px;
-    line-height: 32px;
-    padding: 8px;
-    border-radius: 4px;
-    border: none;
-    display: inline-block;
-    flex: 1;
-    width: 320px;
-    margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 32px;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  display: inline-block;
+  flex: 1;
+  width: 320px;
+  margin-bottom: 24px;
 `;
 
 export const SubmitButton = styled.button`
